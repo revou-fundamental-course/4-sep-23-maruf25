@@ -1,0 +1,58 @@
+<!-- Harus ada main, header, footer -->
+<!-- Style gunakan flexbox -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Matematik</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator Matematik</h1>
+    </header>
+    <main class="container">
+      <!-- Pilihan -->
+      <div class="welcome">
+        <h2>Welcome to Kalkulator Matematik</h2>
+        <p>Hai Sobat, selamat datang !</p>
+        <p>
+          Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun
+          datar
+        </p>
+      </div>
+      <div class="action">
+        <button id="btnKeliling" class="tabs active">Keliling</button>
+        <button id="btnLuas" class="tabs">Luas</button>
+      </div>
+      <!-- Komponen -->
+      <div id="component" class="component">
+        <div class="content">
+          <h2 id="title-content">Keliling Persegi</h2>
+          <img src="assets/persegi.jpg" alt="Persegi" />
+          <div class="description">
+            <p>Rumus Keliling Persegi:</p>
+            <p><strong id="rumus">K = 4 x S</strong></p>
+            <p>Di mana:</p>
+            <p id="keterangan">K = Keliling</p>
+            <p>S = Sisi</p>
+          </div>
+        </div>
+        <div class="form">
+          <label for="sisi">Hitung Keliling Persegi</label>
+          <input type="number" id="sisi" placeholder="Masukkan Sisi" />
+          <p id="errorText"></p>
+        </div>
+        <div id="result"></div>
+        <div class="actionsbutton">
+          <button id="calculate">Hitung</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <footer>Created by Ma'ruf Fiardy ❤️</footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
